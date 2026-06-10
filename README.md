@@ -49,3 +49,7 @@ face-detection-opencv-dnn/
 cat > requirements.txt <<'EOF'
 opencv-python
 numpy
+
+## Collaborator
+
+- Dev Malviya
