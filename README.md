@@ -42,14 +42,3 @@ face-detection-opencv-dnn/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-
-## Step 6: Requirements update karo
-
-```bash
-cat > requirements.txt <<'EOF'
-opencv-python
-numpy
-
-## Collaborator
-
-- Dev Malviya
