@@ -1,20 +1,6 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.env
-.venv/
 venv/
-
-# macOS
+__pycache__/
+*.pyc
 .DS_Store
-__MACOSX/
-
-# IDE
-.vscode/
-.idea/
-
-# Runtime outputs
+.env
 *.log
-output/

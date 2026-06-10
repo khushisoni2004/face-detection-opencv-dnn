@@ -3,8 +3,8 @@ Advanced Real-Time Face Detection using OpenCV DNN (Deep Neural Network)
 Model: SSD (Single Shot Multibox Detector) + ResNet-10 backbone (Caffe)
 
 SETUP — download these two model files before running:
-  prototxt : https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/deploy.prototxt
-  weights  : https://github.com/opencv/opencv_3rdparty/raw/dnn_samples_face_detector_20170830/res10_300x300_ssd_iter_140000.caffemodel
+  prototxt : https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/models/deploy.prototxt
+  weights  : https://github.com/opencv/opencv_3rdparty/raw/dnn_samples_face_detector_20170830/models/res10_300x300_ssd_iter_140000.caffemodel
 
 Place both files in the same folder as this script.
 
@@ -16,8 +16,8 @@ import cv2
 import time
 
 # ── Config ────────────────────────────────────────────────────────────────────
-PROTO      = "deploy.prototxt"           # Network architecture definition
-WEIGHTS    = "res10_300x300_ssd_iter_140000.caffemodel"  # Pre-trained weights
+PROTO      = "models/deploy.prototxt"           # Network architecture definition
+WEIGHTS    = "models/res10_300x300_ssd_iter_140000.caffemodel"  # Pre-trained weights
 CONFIDENCE = 0.55                        # Minimum detection confidence (0-1)
 INPUT_SIZE = (300, 300)                  # SSD was trained at 300x300
 MEAN       = (104.0, 177.0, 123.0)       # BGR mean subtraction values (from training)

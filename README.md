@@ -1,102 +1,51 @@
 # Real-Time Face Detection using OpenCV DNN
 
-A real-time face detection project built with **Python** and **OpenCV DNN**. It uses a pre-trained **ResNet-10 SSD Caffe model** to detect faces from a live webcam feed and displays bounding boxes, confidence score, FPS, and threshold controls.
+A real-time face detection project built using Python and OpenCV DNN. The system uses a pre-trained SSD ResNet model to detect faces from webcam input and display bounding boxes around detected faces.
+
+## Overview
+
+This project demonstrates real-time computer vision using OpenCV's Deep Neural Network module. It captures video from the webcam, processes each frame, detects faces using a pre-trained Caffe model, and displays the result with confidence scores.
 
 ## Features
 
 - Real-time face detection using webcam
-- OpenCV DNN based SSD face detector
-- Confidence score display for each detected face
-- Live FPS and face count HUD
-- Adjustable confidence threshold using keyboard
-- Clean and beginner-friendly Python code
+- OpenCV DNN-based face detector
+- SSD ResNet pre-trained model
+- Bounding box around detected faces
+- Confidence score display
+- Simple Python implementation
+- Clean project structure
 
 ## Tech Stack
 
-- Python
-- OpenCV
-- OpenCV DNN Module
-- Caffe Model
+| Category | Technology |
+|---|---|
+| Language | Python |
+| Library | OpenCV |
+| Model | SSD ResNet Face Detector |
+| Model Format | Caffe |
+| Tools | Git, GitHub, VS Code |
 
 ## Project Structure
 
 ```text
 face-detection-opencv-dnn/
-├── face_detection.py
-├── download_models.py
-├── deploy.prototxt
-├── res10_300x300_ssd_iter_140000.caffemodel
+│
+├── src/
+│   ├── face_detection.py
+│   └── download_models.py
+│
+├── models/
+│   ├── deploy.prototxt
+│   └── res10_300x300_ssd_iter_140000.caffemodel
+│
+├── README.md
 ├── requirements.txt
-├── .gitignore
-└── README.md
-```
+└── .gitignore
 
-## Installation
-
-Clone the repository:
+## Step 6: Requirements update karo
 
 ```bash
-git clone https://github.com/khushisoni2004/face-detection-opencv-dnn.git
-cd face-detection-opencv-dnn
-```
-
-Create and activate a virtual environment:
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run the Project
-
-```bash
-python3 face_detection.py
-```
-
-## Controls
-
-| Key | Action |
-|---|---|
-| `Q` | Quit camera window |
-| `+` | Increase confidence threshold |
-| `-` | Decrease confidence threshold |
-
-## Model Information
-
-This project uses the OpenCV pre-trained SSD face detector:
-
-- `deploy.prototxt` — model architecture
-- `res10_300x300_ssd_iter_140000.caffemodel` — pre-trained weights
-
-If model files are missing, run:
-
-```bash
-python3 download_models.py
-```
-
-## Author
-
-**Khushi Soni**  
-GitHub: [khushisoni2004](https://github.com/khushisoni2004)
-
-## Collaboration
-
-Contributions are welcome. You can fork this repository, make improvements, and create a pull request.
-
-Suggested contribution ideas:
-
-- Add image/video file input support
-- Add face count analytics
-- Improve UI overlay
-- Add face blur/privacy mode
-- Add Streamlit or web dashboard version
-
-## License
-
-This project is open source and available for learning and portfolio use.
+cat > requirements.txt <<'EOF'
+opencv-python
+numpy
