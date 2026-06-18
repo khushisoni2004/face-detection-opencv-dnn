@@ -148,14 +148,4 @@ These files are required for OpenCV DNN face detection.
 * Add web-based demo
 * Add multiple camera support
 
-## Authors
-
-**Khushi Soni**  
-GitHub: https://github.com/khushisoni2004
-
-**Dev Malviya**  
-GitHub: https://github.com/devmalviya0
-
-**Himanshu Choudhary**  
-GitHub: https://github.com/choudharyhim06-star
 
